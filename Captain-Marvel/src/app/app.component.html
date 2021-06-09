@@ -1,0 +1,32 @@
+<div class="container-fluid">
+  <div class="row">
+    <span class="cssstyle"> <strong> Chosse anyone of the Options to Get the Occurence of each Character in a
+        String</strong></span>
+        <br>
+  </div>
+  <div class="row rstyle">
+    <div class="col-6">
+      <div class="custom-file">
+        <input type="file" class="custom-file-input" id="courseFile" (change)="fileUploaded($event)">
+        <label class="custom-file-label" for="courseFile">Choose a file </label>
+      </div>
+
+      <span *ngFor="let item of fileResultArray">
+        <br>
+        {{item.key}}={{item.value}}
+      </span>
+    </div>
+    <!-- <div class="col-3"> <button type="button" class="btn btn-primary btnstyle1"
+        (click)="Upload(string.value)">Upload</button>
+    </div> -->
+    <div class="col-6">
+      <input type="text" class="custom-string" placeholder="Enter some characters" #string>
+      <button type="button" class="btn btn-primary btnstyle2" (click)="Sumbit(string.value)">Submit</button>
+      <span *ngFor="let item of resultArray">
+        <br>
+        {{item.key}}={{item.value}}
+      </span>
+    </div>
+    <!-- <p>{{fileContent}}</p> -->
+  </div>
+</div>
