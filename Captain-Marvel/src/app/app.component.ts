@@ -21,7 +21,7 @@ export class AppComponent {
 
 
   pushToArray(value) {
-    debugger
+    
     for (let key in value) {
       this.resultArray.push({ key: key, value: value[key] });
     }
@@ -33,27 +33,8 @@ export class AppComponent {
     }
 
   }
-  // courseFileSelected(fileList: FileList): void {
-  //   debugger
-  //   let filestring;
-  //   let file = fileList[0];
-  //   // let fileReader: FileReader = new FileReader();
-  //   // let self = this;
-  //   // fileReader.onloadend = function (x) {
-  //   //   debugger
-  //   //   self.fileContent = String(fileReader.result);
-  //   // }
-  //   let reader = new FileReader();
 
-  //   reader.readAsText(file);
-  //   reader.onload = function() {
-  //  console.log(reader.result);
-  //     // filestring=String(reader.result);
-  //   };
-  //   // this.Sumbit(filestring);
-
-
-  // }
+  
   fileUploaded(event) {
     const file: File = event.target.files[0];
     if (file) {
@@ -67,7 +48,7 @@ export class AppComponent {
     }
   }
   Upload(value) {
-    debugger
+    
     this.fileResultArray = [];
     var str = this.removeDuplicateCharacters(value);
     let hash = {};
@@ -79,7 +60,7 @@ export class AppComponent {
     this.FilepushToArray(hash);
   }
   Sumbit(value) {
-    debugger
+    
     this.resultArray = [];
     var str = this.removeDuplicateCharacters(value);
     let hash = {};
