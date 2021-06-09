@@ -1,0 +1,3 @@
+Challenge-1
+Logic -explaination
+First we  get the input via a file which is then uploaded and read upon or by a typing in simple input text from the UI ,Now we remove the duplicates from the input string (from either file or from the input text box) and store it into a variable “Str” .Now we use “For loop” to iterate through ”Str” each character and now we use each char from the Str and use split keyword then do minus one to get the exact count of the character and now we declare an object called “hash” and store the character plus its count in terms of key value pair in it . Now we push the key value pair into an array to display it on the UI
